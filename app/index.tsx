@@ -1,12 +1,7 @@
-import { Text } from "react-native"
-import { SafeAreaView } from "react-native-safe-area-context"
+import { Redirect } from "expo-router"
 
-const index = () => {
-  return (
-    <SafeAreaView>
-        <Text>Home Here</Text>
-    </SafeAreaView>
-  )
+const Home = () => {
+  return <Redirect href="/(auth)/welcome" />;
 }
 
-export default index
+export default Home
